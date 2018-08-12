@@ -1,0 +1,14 @@
+﻿@model LibraClient.Models.ErrorViewModel
+@{
+    ViewData["Title"] = "Lỗi";
+}
+
+<h1 class="text-danger">Uhmm....có lỗi xảy ra :(</h1>
+<h2 class="text-danger">Vui lòng liên hệ IT để được hỗ trợ.</h2>
+
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>Request ID:</strong> <code>@Model.RequestId</code>
+    </p>
+}
